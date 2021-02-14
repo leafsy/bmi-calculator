@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator Widget</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="calc-content">
+      <div class="leafsy-calculator" data-calculatorid="xy">
+        <div id="bmi-calculator-xy__wrapper">
+          <div id="bmi-calculator-xy">
+            <div class="react-grid-layout leafsy-elements with-animation" style="height: 434px;">
+              <span data-ref="*6" class="react-grid-item cssTransforms" style="visibility: visible; width: 350px; height: 50px; position: absolute; transform: translate(0px, 0px);">
+                <div class="element-visibility">
+                  <div class="leafsy-element__height-layer">
+                    <div id="ref-s6" class="leafsy-element leafsy-title-wrapper">
+                      <div class="leafsy-element-controls">
+                        <div class="leafsy-title">
+                          <h2>BMI指数计算器</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span data-ref="#1" class="react-grid-item cssTransforms" style="visibility: visible; width: 350px; height: 93px; position: absolute; transform: translate(0px, 50px);">
+                <div class="element-visibility">
+                  <div class="leafsy-element__height-layer">
+                    <div id="ref-r1" class="leafsy-element leafsy-slider-wrapper">
+                      <div class="leafsy-element-label">
+                        <label>您的体重 (kg):</label>
+                        <label class="rc-slider-value"></label>
+                      </div>
+                      <div class="leafsy-element-controls">
+                        <div class="leafsy-slider with-marks">
+                          <div class="leafsy-slider__wrapper">
+                            <div class="rc-slider rc-slider-with-marks">
+                              <div class="rc-slider-rail"></div>
+                              <div class="rc-slider-track" style="left: 0%; right: auto; width: 0%;"></div>
+                              <div class="rc-slider-step">
+                                <span class="rc-slider-dot" style="left: 0%;"></span>
+                                <span class="rc-slider-dot" style="left: 25%;"></span>
+                                <span class="rc-slider-dot" style="left: 50%;"></span>
+                                <span class="rc-slider-dot" style="left: 75%;"></span>
+                                <span class="rc-slider-dot" style="left: 100%;"></span>
+                              </div>
+                              <div tabindex="0" class="rc-slider-handle" role="slider" aria-valuemin="0" aria-valuemax="400" aria-valuenow="339" aria-disabled="false" style="left: 0%; right: auto; transform: translateX(-50%);"></div>
+                              <div class="rc-slider-mark">
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 0%;">25</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 25%;">50</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 50%;">75</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 75%;">100</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 100%;">125</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span data-ref="#2" class="react-grid-item cssTransforms" style="visibility: visible; width: 350px; height: 93px; position: absolute; transform: translate(0px, 143px);">
+                <div class="element-visibility">
+                  <div class="leafsy-element__height-layer">
+                    <div id="ref-r2" class="leafsy-element leafsy-slider-wrapper">
+                      <div class="leafsy-element-label">
+                        <label>您的身高 (cm):</label>
+                        <label class="rc-slider-value"></label>
+                      </div>
+                      <div class="leafsy-element-controls">
+                        <div class="leafsy-slider with-marks">
+                          <div class="leafsy-slider__wrapper">
+                            <div class="rc-slider rc-slider-with-marks">
+                              <div class="rc-slider-rail"></div>
+                              <div class="rc-slider-track" style="left: 0%; right: auto; width: 0%;"></div>
+                              <div class="rc-slider-step">
+                                <span class="rc-slider-dot" style="left: 0%;"></span>
+                                <span class="rc-slider-dot" style="left: 25%;"></span>
+                                <span class="rc-slider-dot" style="left: 50%;"></span>
+                                <span class="rc-slider-dot" style="left: 75%;"></span>
+                                <span class="rc-slider-dot" style="left: 100%;"></span>
+                              </div>
+                              <div tabindex="0" class="rc-slider-handle" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" aria-disabled="false" style="left: 0%; right: auto; transform: translateX(-50%);"></div>
+                              <div class="rc-slider-mark">
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 0%;">100</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 25%;">125</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 50%;">150</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 75%;">175</span>
+                                <span class="rc-slider-mark-text" style="transform: translateX(-50%); left: 100%;">200</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span data-ref="*3" class="react-grid-item cssTransforms" style="visibility: visible; width: 350px; height: 108px; position: absolute; transform: translate(0px, 236px);">
+                <div class="element-visibility">
+                  <div class="leafsy-element__height-layer">
+                    <div id="ref-s3" class="leafsy-element leafsy-gauge">
+                      <div class="leafsy-element-label">
+                        <label>您的BMI指数是:</label>
+                      </div>
+                      <div class="leafsy-element-controls">
+                        <div class="leafsy-gauge">
+                          <div class="gauge-container">
+                            <div class="gauge-field">
+                              <div class="gauge-segment" style="width: 46.25%; left: 0%; background-color: rgb(211, 35, 0);"></div>
+                              <div class="gauge-segment" style="width: 16.25%; left: 46.25%; background-color: rgb(137, 191, 36);"></div>
+                              <div class="gauge-segment" style="width: 37.5%; left: 62.5%; background-color: rgb(255, 208, 0);"></div>
+                            </div><div class="gauge-step-container">
+                              <div class="gauge-step" style="left: 0%;">
+                                <div class="gauge-step-indicator"></div>
+                                <div class="gauge-step-value">0</div>
+                              </div>
+                              <div class="gauge-step" style="left: 46.25%;">
+                                <div class="gauge-step-indicator"></div>
+                                <div class="gauge-step-value">18.5</div>
+                              </div
+                              ><div class="gauge-step" style="left: 62.5%;">
+                                <div class="gauge-step-indicator"></div>
+                                <div class="gauge-step-value">25</div>
+                              </div>
+                              <div class="gauge-step" style="left: 100%;">
+                                <div class="gauge-step-indicator"></div>
+                                <div class="gauge-step-value">40</div>
+                              </div>
+                            </div>
+                            <div class="gauge-indicator-block" style="left: 100%;">
+                              <div class="gauge-indicator"></div>
+                              <div class="gauge-indicator-count" style="transform: translateX(-8.5px);">48.6</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span data-ref="*5" class="react-grid-item cssTransforms" style="visibility: visible; width: 350px; height: 90px; position: absolute; transform: translate(0px, 344px);">
+                <div class="element-visibility">
+                  <div class="leafsy-element__height-layer">
+                    <div id="ref-s5" class="leafsy-element leafsy-text-gauge">
+                      <div class="leafsy-element-controls">
+                        <div class="text-gauge">
+                          <div class="text-segment" style="transform: translateX(0%);" data-value="0">
+                            <div class="segment-label">
+                              <h4 style="color: rgb(219, 52, 52);">&lt;16: 体重严重不足</h4>
+                            </div>
+                          </div>
+                          <div class="text-segment" style="transform: translateX(-100%);" data-value="16">
+                            <div class="segment-label">
+                              <h4 style="color: rgb(219, 52, 52);">16 - 18.5: 体重过轻</h4>
+                            </div>
+                          </div>
+                          <div class="text-segment" style="transform: translateX(-200%);" data-value="18.5">
+                            <div class="segment-label">
+                              <h4 style="color: rgb(117, 180, 43);">18.5 - 25: 正常范围（健康）</h4>
+                            </div>
+                          </div>
+                          <div class="text-segment" style="transform: translateX(-300%);" data-value="25">
+                            <div class="segment-label">
+                              <h4 style="color: rgb(214, 172, 0);">25 - 30: 超重</h4>
+                            </div>
+                          </div>
+                          <div class="text-segment" style="transform: translateX(-400%);" data-value="30">
+                            <div class="segment-label">
+                              <h4 style="color: rgb(214, 172, 0);">30 - 35: 一级肥胖</h4>
+                            </div>
+                          </div>
+                          <div class="text-segment" style="transform: translateX(-500%);" data-value="35">
+                            <div class="segment-label">
+                              <h4 style="color: rgb(214, 172, 0);">35 - 40: 二级肥胖</h4>
+                            </div>
+                          </div>
+                          <div class="text-segment" style="transform: translateX(-600%);" data-value="40">
+                            <div class="segment-label">
+                              <h4 style="color: rgb(214, 172, 0);">&gt;40: 三级肥胖</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
